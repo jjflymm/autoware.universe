@@ -1,0 +1,27 @@
+/**:
+  ros__parameters:
+    lidar_min_depth_range: 0.5         #the min detection range of lidar
+    lidar_max_depth_range: 150.0       #the max detection range of lidar
+
+    ###imu:
+    acc_cov: 0.1  #0.1
+    gyr_cov: 0.1   #0.3
+    b_acc_cov: 0.0001 #0.0001
+    b_gyr_cov: 0.0001 #0.0001
+
+    ###mapping:
+    cube_len: 200.0             #ikd-tree outer enclosure box
+    NUM_MAX_ITERATIONS: 8       # Optimize the number of iterations
+
+    ###vgicp
+    vgicp_resolution: 2.0
+    vgicp_num_threads: 8
+
+    #pose covariance
+    pose_covariance: [
+      0.01125, 0.0,   0.0,   0.0,      0.0,      0.0,
+      0.0,   0.01125, 0.0,   0.0,      0.0,      0.0,
+      0.0,   0.0,   0.01125, 0.0,      0.0,      0.0,
+      0.0,   0.0,   0.0,   0.000625, 0.0,      0.0,
+      0.0,   0.0,   0.0,   0.0,      0.000625, 0.0,
+      0.0,   0.0,   0.0,   0.0,      0.0,      0.000625]
